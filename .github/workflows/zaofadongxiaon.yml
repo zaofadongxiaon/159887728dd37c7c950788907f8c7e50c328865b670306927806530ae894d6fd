@@ -1,0 +1,20 @@
+name: zaofadongxiaon
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '54 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zaofadongxiaon
+        env:
+          v2: ${{ secrets.v2 }}
+        run: |
+          echo $v2 | jq -r .dx58055 | /bin/bash
+          echo $eca203 | jq -r .ude324 | /bin/bash
+          echo $sycj17917 | jq -r .bwsa13074 | /bin/bash
+          echo $aiyo1 | jq -r .lrj87 | /bin/bash
+
